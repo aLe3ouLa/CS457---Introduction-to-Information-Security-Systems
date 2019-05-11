@@ -1,0 +1,3 @@
+Encrypt this file using  a 256-bit key.
+The key should be generated using csdAM as password.
+For example, if your AM is 2731 the password should be csd2731.

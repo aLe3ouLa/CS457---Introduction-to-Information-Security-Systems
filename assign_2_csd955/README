@@ -1,0 +1,27 @@
+***************************************************
+* HY457 - Introduction to computer security       *
+* Alexandra Barka                                 *
+* AM: 955 Login: barka                            *
+***************************************************
+
+Compile: make
+Run task A: LD_PRELOAD=./myfunctions.so ./prog
+RUn task B: ./log logpath 1|2|3 [filepath]
+ 
+Task A
+------
+
+Oi open, fopen, write & fwrite ginan 'overload' sto myfunctions.c. Aytes epekteinoun tin leitourgikothta twn pragmatikwn sunarthsewn kanwntas monitor ton xristh kai grafontas sto log stoixeia opws to uid, wra, hmeromhnia kai to hash tou arxeiou.
+
+> Otan o filedescriptor == -1 h an den exw read access sto arxeio h sunarthsh de mporei na paragei to hash, opote apothikeyei sa hash Null.
+> To problima stis write einai oti to arxeio den exei kleisei, sunepws akoma kai an exw grapsei mesa sto arxeio de mporw na paragw to swsto hash. Mia lush tha htan na kleinw to arxeio kai na to 3ananoigw alla de mporoun na brethoun ta swsta flags pou eixe arxika anoi3ei h sunarthsh.
+
+Task B
+------
+
+Gia to output pou zhthte sto task b, dhmiourgithikan diafores domes etsi wste otan kanoume parse to log, na kratame ta data. Ta logs ginontai insert in front opote to output einai sthn anapodh seira apo oti diabastike to log. 
+
+Sto B1: apla blepoume poioi xrhstes exoun action_denied == 1
+Sto B2: sunduastika to hash, to open kai to action denied mas dinoun an to arxeio exei ginei access h modified
+Sto B3: Sugkrinoume tis hmeromhnies tou log me tou susthmatos kai apexoun 24 wres, anebazume kapoion counter ston xrhsth. Edw uparxei mia suntheth domh, kai kratame posa diaforetika arxeia exei kanei access o xrhsths unaccessfully.
+
